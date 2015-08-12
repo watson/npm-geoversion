@@ -1,0 +1,49 @@
+{
+  "name": "npm-geoversion",
+  "version": "0.0.0",
+  "description": "Tag npm modules with your current geo-coordinates every time you bump the version",
+  "main": "index.js",
+  "bin": {
+    "npm-geoversion": "index.js"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson/npm-geoversion.git"
+  },
+  "dependencies": {
+    "geopkg": "^2.1.1",
+    "git-state": "^2.4.0",
+    "semver": "^5.0.1",
+    "wifi-triangulate": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^5.0.2",
+    "tape": "^4.0.0"
+  },
+  "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/npm-geoversion/issues"
+  },
+  "homepage": "https://github.com/watson/npm-geoversion#readme",
+  "keywords": [
+    "geo",
+    "geotag",
+    "geotagging",
+    "coordinates",
+    "lat",
+    "latitue",
+    "lng",
+    "long",
+    "longitude",
+    "module",
+    "package",
+    "npm",
+    "version",
+    "bump"
+  ],
+  "preferGlobal": true
+}
