@@ -1,8 +1,8 @@
 'use strict'
 
-var os = require('os')
 var fs = require('fs')
 var path = require('path')
+var osTmpdir = require('os-tmpdir')
 var test = require('tape')
 var pkglib = require('../lib/package')
 
@@ -17,7 +17,7 @@ test('pkglib.read', function (t) {
 })
 
 test('pkglib.save', function (t) {
-  var file = path.join(os.tmpdir(), 'package.json')
+  var file = path.join(osTmpdir(), 'package.json')
   var now = Date.now()
   var pkg = { foo: now }
   pkglib.save(file, pkg, function (err) {
