@@ -2,17 +2,15 @@
 'use strict'
 
 var util = require('util')
-var path = require('path')
 var exec = require('child_process').exec
 var git = require('git-state')
 var locate = require('wifi-triangulate')
-var pkglib = require('./lib/package')
+var pkgio = require('package-json-io')
 var bump = require('./lib/bump')
 var cliPkg = require('./package')
 
 var args = process.argv.slice(2)
 var cwd = process.cwd()
-var pkgFile = path.join(cwd, 'package.json')
 var isGit = git.isGitSync(cwd)
 
 if (isGit) {
@@ -26,7 +24,7 @@ if (isGit) {
 }
 
 function updatePackage () {
-  pkglib.read(pkgFile, function (err, pkg) {
+  pkgio.read(function (err, pkg) {
     if (err) return done(err)
 
     updateVersion(pkg)
@@ -41,7 +39,7 @@ function updatePackage () {
         return
       }
 
-      pkglib.save(pkgFile, pkg, function (err) {
+      pkgio.update(pkg, function (err) {
         if (err) return done(err)
 
         if (isGit) {
