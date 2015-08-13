@@ -1,6 +1,6 @@
 {
   "name": "npm-geoversion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tag npm modules with your current geo-coordinates every time you bump the version",
   "main": "index.js",
   "bin": {
@@ -47,7 +47,7 @@
   ],
   "preferGlobal": true,
   "coordinates": [
-    52.6417202,
-    4.7719043
+    52.3753305,
+    4.8959448
   ]
 }
