@@ -7,22 +7,19 @@
     "npm-geoversion": "index.js"
   },
   "scripts": {
-    "test": "standard && tape test/*.js"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/watson/npm-geoversion.git"
   },
   "dependencies": {
-    "git-state": "^2.4.0",
+    "npm-version-bump": "^1.0.0",
     "package-json-io": "^1.0.0",
-    "semver": "^5.0.1",
     "wifi-triangulate": "^1.1.1"
   },
   "devDependencies": {
-    "os-tmpdir": "^1.0.1",
-    "standard": "^5.0.2",
-    "tape": "^4.0.0"
+    "standard": "^5.0.2"
   },
   "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
   "license": "MIT",
