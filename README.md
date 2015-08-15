@@ -8,6 +8,10 @@ command in one simple command: `npm-geoversion`
 [![Build status](https://travis-ci.org/watson/npm-geoversion.svg?branch=master)](https://travis-ci.org/watson/npm-geoversion)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
+**Notice:** This module is now baked into
+[geopkg](https://github.com/watson/geopkg): `geopkg version patch`, so I
+would recommend that you use that module instead.
+
 ## Installation
 
 ```
